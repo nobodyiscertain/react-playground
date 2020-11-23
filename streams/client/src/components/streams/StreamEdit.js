@@ -12,7 +12,6 @@ const StreamEdit = props => {
   }, [fetchStream]);
 
   const onSubmit = (formValues) => {
-    console.log(formValues);
     props.editStream(props.match.params.id, formValues);
   }
 
