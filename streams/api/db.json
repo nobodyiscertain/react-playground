@@ -1,0 +1,30 @@
+{
+  "streams": [
+    {
+      "title": "sasdfasdf",
+      "description": "aasdfasdf",
+      "id": 1
+    },
+    {
+      "title": "Bingo",
+      "description": "Bongo",
+      "id": 10
+    },
+    {
+      "title": "afasdfasdfasdf",
+      "description": "dfasdfasdfasdfda",
+      "id": 11
+    },
+    {
+      "title": "Barf",
+      "description": "All You Want",
+      "id": 16
+    },
+    {
+      "title": "Current Signed In Exact",
+      "description": "Something see off",
+      "userId": "103138863218570906174",
+      "id": 17
+    }
+  ]
+}
