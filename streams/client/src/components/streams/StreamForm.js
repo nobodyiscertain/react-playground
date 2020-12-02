@@ -1,28 +1,28 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
-const StreamForm = (props) => {
-  const renderError = ({ error, touched }) => {
-    if (touched && error) {
-      return (
-        <div className="ui error message">
-          <div className="header">{error}</div>
-        </div>
-      );
-    }
-  };
-
-  const renderInput = ({ input, label, meta }) => {
-    const className = `field ${meta.error && meta.touched ? 'error' : ''}`
+const renderError = ({ error, touched }) => {
+  if (touched && error) {
     return (
-      <div className={className}>
-        <label>{label}</label>
-        <input {...input} autoComplete="off" />
-        {renderError(meta)}
+      <div className="ui error message">
+        <div className="header">{error}</div>
       </div>
     );
-  };
+  }
+};
 
+const renderInput = ({ input, label, meta }) => {
+  const className = `field ${meta.error && meta.touched ? 'error' : ''}`
+  return (
+    <div className={className}>
+      <label>{label}</label>
+      <input {...input} autoComplete="off" />
+      {renderError(meta)}
+    </div>
+  );
+};
+
+const StreamForm = (props) => {
   const onSubmit = (formValues) => {
     props.onSubmit(formValues);
   };
